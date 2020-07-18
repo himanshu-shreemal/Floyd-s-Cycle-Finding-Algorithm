@@ -90,7 +90,6 @@ public class FloydsAlgo {
 		while (slow != null && fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
-			System.out.print(fast.data);
 			if (slow == fast) {
 				loop = true;
 				break;
